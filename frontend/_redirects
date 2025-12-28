@@ -1,6 +1,0 @@
-# Netlify SPA Redirects
-/*    /index.html   200
-
-# For specific API or static files (optional)
-/api/*  https://your-api.com/:splat  200
-/assets/*  /assets/:splat  200
