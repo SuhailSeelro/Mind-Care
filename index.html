@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare - Mental Health Support Platform</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Crisis Banner -->
+    <div class="crisis-banner">
+        <div class="container">
+            <i class="fas fa-exclamation-triangle"></i>
+            <strong>If you are in crisis:</strong> Call 988 (Suicide & Crisis Lifeline) or text HOME to 741741
+            <button class="close-banner">&times;</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>MindCare</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../pages/resources.html" class="nav-link">Resources</a></li>
+                <li><a href="../pages/forum.html" class="nav-link">Support Forum</a></li>
+                <li><a href="../pages/therapists.html" class="nav-link">Find Therapists</a></li>
+                <li><a href="../pages/about.html" class="nav-link">About</a></li>
+                <li><a href="../pages/login.html" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">You Are Not Alone On Your Journey</h1>
+                <p class="hero-subtitle animate-fade-in-delay">Professional mental health support, resources, and community when you need it most.</p>
+                <div class="hero-buttons animate-slide-up">
+                    <button class="btn-primary">Get Support Now</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-heart"></i>
+                    <h4>24/7 Crisis Support</h4>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-users"></i>
+                    <h4>Peer Community</h4>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Safe & Private</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">How We Can Help</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Support Forum</h3>
+                    <p>Connect with others who understand what you're going through in our moderated community.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Find Therapists</h3>
+                    <p>Browse verified mental health professionals and book appointments online.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Resources</h3>
+                    <p>Access self-help tools, articles, and coping strategies curated by professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mood Tracker Section -->
+    <section class="mood-tracker">
+        <div class="container">
+            <h2 class="section-title">Daily Mood Tracker</h2>
+            <div class="tracker-container" data-aos="zoom-in">
+                <div class="mood-options">
+                    <div class="mood-option" data-mood="5">
+                        <i class="fas fa-laugh"></i>
+                        <span>Excellent</span>
+                    </div>
+                    <div class="mood-option" data-mood="4">
+                        <i class="fas fa-smile"></i>
+                        <span>Good</span>
+                    </div>
+                    <div class="mood-option" data-mood="3">
+                        <i class="fas fa-meh"></i>
+                        <span>Okay</span>
+                    </div>
+                    <div class="mood-option" data-mood="2">
+                        <i class="fas fa-frown"></i>
+                        <span>Poor</span>
+                    </div>
+                    <div class="mood-option" data-mood="1">
+                        <i class="fas fa-sad-tear"></i>
+                        <span>Terrible</span>
+                    </div>
+                </div>
+                <div class="tracker-history">
+                    <h4>Your Mood History</h4>
+                    <div class="history-chart">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crisis Resources -->
+    <section class="crisis-resources">
+        <div class="container">
+            <h2 class="section-title">Immediate Help</h2>
+            <div class="resources-grid">
+                <div class="resource-card emergency" data-aos="flip-left">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>988 Suicide & Crisis Lifeline</h3>
+                    <p>Call or text 988 anytime in the US</p>
+                    <button class="btn-call">Call Now</button>
+                </div>
+                <div class="resource-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-comment-medical"></i>
+                    <h3>Crisis Text Line</h3>
+                    <p>Text HOME to 741741</p>
+                    <button class="btn-text">Text Now</button>
+                </div>
+                <div class="resource-card" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-globe"></i>
+                    <h3>Emergency Services</h3>
+                    <p>Call 911 for immediate danger</p>
+                    <button class="btn-emergency">Call 911</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindCare</h3>
+                    <p>Providing compassionate mental health support and resources.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/resources.html">Resources</a></li>
+                        <li><a href="../pages/forum.html">Support Forum</a></li>
+                        <li><a href="../pages/therapists.html">Find Therapists</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MindCare. This platform is not a substitute for professional medical advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/mood-tracker.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
