@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Forum - MindCare</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Crisis Banner -->
+    <div class="crisis-banner">
+        <div class="container">
+            <i class="fas fa-exclamation-triangle"></i>
+            <strong>If you are in crisis:</strong> Call 988 (Suicide & Crisis Lifeline) or text HOME to 741741
+            <button class="close-banner">&times;</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>MindCare</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../pages/resources.html" class="nav-link">Resources</a></li>
+                <li><a href="../pages/forum.html" class="nav-link active">Support Forum</a></li>
+                <li><a href="../pages/therapists.html" class="nav-link">Find Therapists</a></li>
+                <li><a href="../pages/about.html" class="nav-link">About</a></li>
+                <li><a href="../pages/login.html" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Forum Hero -->
+    <section class="page-hero forum-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">Support Community</h1>
+                <p class="hero-subtitle animate-fade-in-delay">Connect with others who understand. Share experiences, find support, and heal together in our safe, moderated space.</p>
+                <div class="hero-buttons animate-slide-up">
+                    <button class="btn-primary" id="joinCommunity">Join Community</button>
+                    <button class="btn-secondary" id="viewGuidelines">Community Guidelines</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Stats -->
+    <section class="community-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number" data-count="12543">0</div>
+                    <div class="stat-label">Community Members</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-comments"></i>
+                    <div class="stat-number" data-count="8927">0</div>
+                    <div class="stat-label">Support Threads</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <div class="stat-number" data-count="24561">0</div>
+                    <div class="stat-label">Messages of Support</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">Active Moderators</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Categories -->
+    <section class="forum-categories">
+        <div class="container">
+            <h2 class="section-title">Discussion Categories</h2>
+            <div class="categories-grid">
+                <div class="forum-category" data-aos="zoom-in">
+                    <div class="category-header">
+                        <i class="fas fa-wind"></i>
+                        <h3>Anxiety & Panic</h3>
+                        <span class="thread-count">1,243 threads</span>
+                    </div>
+                    <p>Share experiences and coping strategies for anxiety disorders, panic attacks, and phobias.</p>
+                    <div class="category-meta">
+                        <span class="latest-post">Latest: 2 hours ago</span>
+                        <a href="#anxiety" class="btn-primary">Browse</a>
+                    </div>
+                </div>
+
+                <div class="forum-category" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="category-header">
+                        <i class="fas fa-cloud-rain"></i>
+                        <h3>Depression</h3>
+                        <span class="thread-count">987 threads</span>
+                    </div>
+                    <p>Support for dealing with depression, mood disorders, and finding hope in difficult times.</p>
+                    <div class="category-meta">
+                        <span class="latest-post">Latest: 5 hours ago</span>
+                        <a href="#depression" class="btn-primary">Browse</a>
+                    </div>
+                </div>
+
+                <div class="forum-category" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Stress & Burnout</h3>
+                        <span class="thread-count">756 threads</span>
+                    </div>
+                    <p>Discuss work stress, life pressures, and strategies for preventing burnout.</p>
+                    <div class="category-meta">
+                        <span class="latest-post">Latest: 1 hour ago</span>
+                        <a href="#stress" class="btn-primary">Browse</a>
+                    </div>
+                </div>
+
+                <div class="forum-category" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="category-header">
+                        <i class="fas fa-relationship"></i>
+                        <h3>Relationships</h3>
+                        <span class="thread-count">1,532 threads</span>
+                    </div>
+                    <p>Navigate relationship challenges, family dynamics, and social connections.</p>
+                    <div class="category-meta">
+                        <span class="latest-post">Latest: 30 minutes ago</span>
+                        <a href="#relationships" class="btn-primary">Browse</a>
+                    </div>
+                </div>
+
+                <div class="forum-category" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="category-header">
+                        <i class="fas fa-star"></i>
+                        <h3>Success Stories</h3>
+                        <span class="thread-count">654 threads</span>
+                    </div>
+                    <p>Share your recovery journey and celebrate milestones with the community.</p>
+                    <div class="category-meta">
+                        <span class="latest-post">Latest: 3 hours ago</span>
+                        <a href="#success" class="btn-primary">Browse</a>
+                    </div>
+                </div>
+
+                <div class="forum-category" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="category-header">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>General Support</h3>
+                        <span class="thread-count">2,145 threads</span>
+                    </div>
+                    <p>A safe space for any mental health topic that doesn't fit other categories.</p>
+                    <div class="category-meta">
+                        <span class="latest-post">Latest: Just now</span>
+                        <a href="#general" class="btn-primary">Browse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Discussions -->
+    <section class="recent-discussions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Discussions</h2>
+                <button class="btn-primary" id="newDiscussion">Start New Discussion</button>
+            </div>
+            
+            <div class="discussions-list">
+                <div class="discussion-thread" data-aos="fade-right">
+                    <div class="thread-header">
+                        <div class="thread-title">
+                            <h3>Dealing with morning anxiety</h3>
+                            <span class="thread-category">Anxiety & Panic</span>
+                        </div>
+                        <div class="thread-meta">
+                            <span class="reply-count"><i class="fas fa-comment"></i> 24</span>
+                            <span class="view-count"><i class="fas fa-eye"></i> 156</span>
+                        </div>
+                    </div>
+                    <div class="thread-content">
+                        <p>Does anyone else experience intense anxiety as soon as they wake up? I've been struggling with this for months and would appreciate any coping strategies...</p>
+                    </div>
+                    <div class="thread-footer">
+                        <div class="author-info">
+                            <img src="../images/user1.jpg" alt="User Avatar" class="user-avatar">
+                            <span class="username">AnxiousSoul</span>
+                        </div>
+                        <div class="thread-time">
+                            <i class="fas fa-clock"></i>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="discussion-thread" data-aos="fade-right" data-aos-delay="100">
+                    <div class="thread-header">
+                        <div class="thread-title">
+                            <h3>Celebrating 6 months therapy-free!</h3>
+                            <span class="thread-category">Success Stories</span>
+                        </div>
+                        <div class="thread-meta">
+                            <span class="reply-count"><i class="fas fa-comment"></i> 42</span>
+                            <span class="view-count"><i class="fas fa-eye"></i> 289</span>
+                        </div>
+                    </div>
+                    <div class="thread-content">
+                        <p>After 2 years of consistent therapy and hard work, my therapist and I agreed I'm ready to continue my journey independently. So grateful for this community's support...</p>
+                    </div>
+                    <div class="thread-footer">
+                        <div class="author-info">
+                            <img src="../images/user2.jpg" alt="User Avatar" class="user-avatar">
+                            <span class="username">HopeWarrior</span>
+                        </div>
+                        <div class="thread-time">
+                            <i class="fas fa-clock"></i>
+                            <span>5 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="discussion-thread" data-aos="fade-right" data-aos-delay="200">
+                    <div class="thread-header">
+                        <div class="thread-title">
+                            <h3>Medication side effects - when to worry?</h3>
+                            <span class="thread-category">General Support</span>
+                        </div>
+                        <div class="thread-meta">
+                            <span class="reply-count"><i class="fas fa-comment"></i> 18</span>
+                            <span class="view-count"><i class="fas fa-eye"></i> 134</span>
+                        </div>
+                    </div>
+                    <div class="thread-content">
+                        <p>Recently started new medication and experiencing some side effects. How do you know when it's normal adjustment vs when to contact your doctor?...</p>
+                    </div>
+                    <div class="thread-footer">
+                        <div class="author-info">
+                            <img src="../images/user3.jpg" alt="User Avatar" class="user-avatar">
+                            <span class="username">NewJourney</span>
+                        </div>
+                        <div class="thread-time">
+                            <i class="fas fa-clock"></i>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn-secondary" id="loadMoreThreads">Load More Discussions</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Guidelines -->
+    <section class="guidelines-section">
+        <div class="container">
+            <div class="guidelines-card" data-aos="fade-up">
+                <h2>Community Guidelines</h2>
+                <div class="guidelines-list">
+                    <div class="guideline-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h3>Safety First</h3>
+                            <p>Never encourage self-harm or dangerous behaviors. Report concerning content immediately.</p>
+                        </div>
+                    </div>
+                    <div class="guideline-item">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <h3>Be Compassionate</h3>
+                            <p>Offer support without judgment. Everyone's journey is different.</p>
+                        </div>
+                    </div>
+                    <div class="guideline-item">
+                        <i class="fas fa-user-md"></i>
+                        <div>
+                            <h3>No Medical Advice</h3>
+                            <p>Share experiences, but don't diagnose or prescribe treatments.</p>
+                        </div>
+                    </div>
+                    <div class="guideline-item">
+                        <i class="fas fa-lock"></i>
+                        <div>
+                            <h3>Respect Privacy</h3>
+                            <p>Keep conversations confidential. Don't share personal information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="guidelines-actions">
+                    <button class="btn-primary">Agree & Join Community</button>
+                    <p class="guidelines-note">By joining, you agree to follow our community guidelines and terms of service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindCare</h3>
+                    <p>Providing compassionate mental health support and resources.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="forum.html">Support Forum</a></li>
+                        <li><a href="therapists.html">Find Therapists</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MindCare. This platform is not a substitute for professional medical advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/animations.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/forum.js"></script>
+</body>
+</html>
